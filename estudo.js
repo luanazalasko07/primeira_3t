@@ -1,5 +1,5 @@
 let tabuada = 2; 
-let nome = " Sophia"; 
+let nome = "Luana"; 
 
 function escreva(){
     

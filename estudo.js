@@ -101,24 +101,22 @@ function calcule() {
 }
 
 function calculaESG(){
-  //ax2 + bx +c = 0;
-  //-x2 + 5x - 6 = 0;
-  let a = 3;
-  let b = -2;
-  let c = -8;
-  delta = (b*b) - (4*a*c);
-  let raiz;
-  let x1, x2;
-  if (delta < 0){
-      //escrever que não tem solução.
-      raiz = "Não tem raiz real";
-}else {
-  raiz = Math.sqrt(delta);
-  x1 = ((-b)+raiz)/(2*a);
-  x2 = ((-b)-raiz)/(2*a);
-  raiz = "x1="+x1 + " e x2="+x2;
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let c = document.getElementById("c").value;
+    delta = (b*b) - (4*a*c)
+    let raiz;
+    let x1,x2;
+    if (delta < 0){
+        raiz = "nao tem raiz real";
 
-}
+    }else{
+raiz = Math.sqrt(delta);
+x1 = ((-b)+raiz)/(2*a);
+x2 = ((-b)-raiz)/(2*a);
+raiz = "x1="+x1 + " e x2="+x2;
 
-  document.getElementById("raiz").value = raiz;
+    }
+
+    document.getElementById("raiz").value = raiz; 
 }
